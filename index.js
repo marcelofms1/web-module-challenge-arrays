@@ -153,10 +153,18 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(originalFlavors, flavorIndex){
+
+    for (let i = 0; i < originalFlavors.length; i++){
+      if (originalFlavors[i] === flavorIndex){
+        originalFlavors.splice(i, 1)
+      } 
+    }
+  return originalFlavors;
 }
 
+console.log(removeFlavorByName(originalFlavors, "Black Walnut"))
+console.log(originalFlavors)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
